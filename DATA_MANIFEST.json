@@ -1,0 +1,322 @@
+{
+  "title": "NNCAI simulation datasets",
+  "release_version": "data-2026-11-26",
+  "release_date": "2026-11-26",
+  "repository": "https://github.com/lwkang/nncai_simulation",
+  "license": "CC-BY-4.0",
+  "code_included": false,
+  "canonical_csv_records": 19302,
+  "files": [
+    {
+      "path": "data/ablation1/episodes.csv",
+      "bytes": 133763,
+      "sha256": "69f7e0fcacc9d9fe6e3ce6578621e21fc9ebdbf3d9040fdfb64d9c9c20bfe240",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "rows": 960,
+      "columns": [
+        "condition",
+        "bw_mbps",
+        "seed",
+        "payload_bytes",
+        "bw_usage_mbps",
+        "mean_latency_s",
+        "packet_loss_rate",
+        "stale_cso_rate",
+        "message_count",
+        "payload_per_msg",
+        "task_success_rate",
+        "episode_completion_time",
+        "evidence_status"
+      ],
+      "keys": [
+        "condition",
+        "bw_mbps",
+        "seed"
+      ],
+      "missing_values": {},
+      "historical_source": {
+        "source_name": "a1_four_arm_960_provenance.csv",
+        "source_sha256": "69f7e0fcacc9d9fe6e3ce6578621e21fc9ebdbf3d9040fdfb64d9c9c20bfe240"
+      }
+    },
+    {
+      "path": "data/ablation2/episodes.csv",
+      "bytes": 51949,
+      "sha256": "9eed22159f807a3d87618610c53bcbacb2b162ad724232eccfb39413d1c9e6eb",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "rows": 810,
+      "columns": [
+        "condition",
+        "error_rate",
+        "overlap_level",
+        "seed",
+        "capability_match_rate",
+        "action_conflict_rate",
+        "semantic_mismatch_count",
+        "replan_count",
+        "cso_validity_rate",
+        "llm_accept_rate",
+        "task_success_rate",
+        "episode_completion_time"
+      ],
+      "keys": [
+        "condition",
+        "error_rate",
+        "overlap_level",
+        "seed"
+      ],
+      "missing_values": {},
+      "historical_source": {
+        "source_name": "ablation2_810.csv",
+        "source_sha256": "9eed22159f807a3d87618610c53bcbacb2b162ad724232eccfb39413d1c9e6eb"
+      }
+    },
+    {
+      "path": "data/ablation3/episodes.csv",
+      "bytes": 698733,
+      "sha256": "2e370d83de202b455e1982587f62ccfdf2cfc7d667309cb1b2b6b01bc5b438d3",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "rows": 5400,
+      "columns": [
+        "condition",
+        "pollution_rate",
+        "seed",
+        "injection_occurred",
+        "false_acceptance_rate",
+        "false_rejection_rate",
+        "detection_rate",
+        "pollution_propagation",
+        "pollution_exposure_s",
+        "pollution_exposure_frac",
+        "wasted_ugv_dispatch_s",
+        "post_admission_detected",
+        "audit_detect_time_s",
+        "audit_false_positives",
+        "evaded",
+        "downstream_linked",
+        "downstream_reverted",
+        "physical_recovery_time_s",
+        "recall_travel_s",
+        "recall_disengage_s",
+        "recalls_from_en_route",
+        "recalls_from_executing",
+        "total_recovery_time_s",
+        "rollback_success_rate",
+        "mean_recovery_time_s",
+        "isolation_count",
+        "detection_time_s",
+        "downstream_affected",
+        "task_success_rate",
+        "episode_completion_time"
+      ],
+      "keys": [
+        "condition",
+        "pollution_rate",
+        "seed"
+      ],
+      "missing_values": {},
+      "historical_source": {
+        "source_name": "ablation3_5400.csv",
+        "source_sha256": "2e370d83de202b455e1982587f62ccfdf2cfc7d667309cb1b2b6b01bc5b438d3"
+      }
+    },
+    {
+      "path": "data/ablation4/episodes.csv",
+      "bytes": 1243430,
+      "sha256": "cf4e2e582d7bab4e57506df7a3c93aa17f2c6f9fdbc01a90499fcabb03ac1b33",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "rows": 9600,
+      "columns": [
+        "pillar_config",
+        "pressure_mode",
+        "seed",
+        "injection_occurred",
+        "task_success_rate",
+        "episode_completion_time",
+        "bandwidth_usage_mbps",
+        "action_conflict_rate",
+        "false_acceptance_rate",
+        "pollution_propagation",
+        "cascaded_failure",
+        "evaded",
+        "detection_rate",
+        "post_admission_detected",
+        "evidence_status"
+      ],
+      "keys": [
+        "pillar_config",
+        "pressure_mode",
+        "seed"
+      ],
+      "missing_values": {},
+      "historical_source": {
+        "source_name": "a4_9600_postp0_mixed_provenance.csv",
+        "source_sha256": "21996251359d41a64fe8cdd46afaa8911e4e0263614de96b29d83e460c9a9b91",
+        "transformation": "Added row-level evidence_status: a1_only = actual POST-P0 rerun; other three arms = audited P0-invariant carry-forward. All pre-existing columns and row keys/values preserved."
+      }
+    },
+    {
+      "path": "data/model_test/case_results.csv",
+      "bytes": 297202,
+      "sha256": "7f18b9100ca3b08d35b11a00c9baff6da1ac3f310d76cc43b05255e22fbb2dd1",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "rows": 972,
+      "columns": [
+        "round_id",
+        "case_id",
+        "provider",
+        "overlap_level",
+        "ugv_label",
+        "event_type",
+        "battery_pct",
+        "bandwidth_kbps",
+        "rule_decision",
+        "policy_correct",
+        "requested_model",
+        "response_model",
+        "prompt_sha256",
+        "cache_status",
+        "source_case_id",
+        "valid",
+        "llm_decision",
+        "matches_reference",
+        "fallback_used",
+        "finish_reason",
+        "request_status",
+        "error_category",
+        "validation_error"
+      ],
+      "keys": [
+        "round_id",
+        "provider",
+        "case_id"
+      ],
+      "missing_values": {
+        "llm_decision": 3,
+        "error_category": 969,
+        "validation_error": 969
+      },
+      "historical_source": {
+        "source_name": "public_case_results_972.csv",
+        "source_sha256": "7f18b9100ca3b08d35b11a00c9baff6da1ac3f310d76cc43b05255e22fbb2dd1"
+      }
+    },
+    {
+      "path": "data/model_test/formal_settings.json",
+      "bytes": 1925,
+      "sha256": "4fd3c496251dd7209c3a73bec40b82b6247eae5b3adef7b248339d0244c74f06",
+      "format": "json",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "data/model_test/frozen_grid.json",
+      "bytes": 158989,
+      "sha256": "bbca0790050b232169c3093eda18579d3fee48420bcad8b26485d61f6c1db605",
+      "format": "json",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "data/model_test/prompts.json",
+      "bytes": 103282,
+      "sha256": "f3b79214c30cf78a960aa83c75470d08a8199bf602e67327ed1aa5d1a0830525",
+      "format": "json",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "data/resource_contention/episodes.csv",
+      "bytes": 363847,
+      "sha256": "062f64f15a0e3108091b135825f1c757b4b910ed9b0dd81db1f8493d5d0fe45f",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "rows": 1200,
+      "columns": [
+        "arm",
+        "audit_false_positives",
+        "episode_end_active_memory_pollution",
+        "fake_assigned_ever",
+        "fake_ugv_busy_s",
+        "false_acceptance_count",
+        "false_rejection_count",
+        "first_assignment_id",
+        "fixture_sha256",
+        "genuine_confirmation_s",
+        "genuine_confirmed_by_deadline",
+        "genuine_dispatch_s",
+        "genuine_wait_censored_at_s",
+        "genuine_wait_s",
+        "mean_information_recovery_s",
+        "physical_recovery_s",
+        "pollution_exposure_s",
+        "recall_disengage_s",
+        "recall_travel_s",
+        "rollback_events",
+        "rollback_successes",
+        "seed",
+        "status",
+        "tie_order",
+        "wasted_ugv_dispatch_s",
+        "GEN_admission",
+        "CORR_admission",
+        "both_accepted",
+        "wait_observed",
+        "restricted_wait_s",
+        "restricted_confirmation_s",
+        "audit_flag_count",
+        "fixture_seed_independent_key"
+      ],
+      "keys": [
+        "seed",
+        "tie_order",
+        "arm"
+      ],
+      "missing_values": {
+        "first_assignment_id": 54,
+        "genuine_confirmation_s": 120,
+        "genuine_dispatch_s": 87,
+        "genuine_wait_censored_at_s": 1113,
+        "genuine_wait_s": 87
+      },
+      "historical_source": {
+        "source_name": "T12_3_paired_1200_flattened.csv",
+        "source_sha256": "062f64f15a0e3108091b135825f1c757b4b910ed9b0dd81db1f8493d5d0fe45f"
+      }
+    },
+    {
+      "path": "data/scalability/episodes.csv",
+      "bytes": 37112,
+      "sha256": "82e38995004146b4814567c045b2530ee860b5815a4e2385662abb9829308bf5",
+      "format": "csv",
+      "encoding": "UTF-8",
+      "rows": 360,
+      "columns": [
+        "condition",
+        "n_agents",
+        "num_targets",
+        "seed",
+        "total_bytes",
+        "total_MB",
+        "bw_utilization",
+        "mean_latency_s",
+        "packet_loss_rate",
+        "task_success_rate",
+        "message_count"
+      ],
+      "keys": [
+        "condition",
+        "n_agents",
+        "seed"
+      ],
+      "missing_values": {},
+      "load_ratio_above_one": 35,
+      "historical_source": {
+        "source_name": "scalability_360.csv",
+        "source_sha256": "82e38995004146b4814567c045b2530ee860b5815a4e2385662abb9829308bf5"
+      }
+    }
+  ]
+}

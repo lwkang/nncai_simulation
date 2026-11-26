@@ -1,0 +1,57 @@
+{
+  "Figure 15(a)": {
+    "exported_name": "fig3a_message_drop.pdf",
+    "canonical_input": "data/ablation1/episodes.csv",
+    "filter": "All rows of the listed source file, grouped by the corresponding condition and experimental setting."
+  },
+  "Figure 15(b)": {
+    "exported_name": "fig3c_task_success.pdf",
+    "canonical_input": "data/ablation1/episodes.csv",
+    "filter": "All rows of the listed source file, grouped by the corresponding condition and experimental setting."
+  },
+  "Figure 15(c)": {
+    "exported_name": "fig3d_scalability.pdf",
+    "canonical_input": "data/scalability/episodes.csv",
+    "filter": "All rows of the listed source file, grouped by the corresponding condition and experimental setting."
+  },
+  "Figure 16(a)": {
+    "exported_name": "fig4a_capmatch_error.pdf",
+    "canonical_input": "data/ablation2/episodes.csv",
+    "filter": "condition in {label_only, cso_rule}; overlap_level == 0; 180 rows total (30 per condition/error-rate cell)."
+  },
+  "Figure 16(b)": {
+    "exported_name": "fig4c_task_error.pdf",
+    "canonical_input": "data/ablation2/episodes.csv",
+    "filter": "condition in {label_only, cso_rule}; overlap_level == 0; 180 rows total (30 per condition/error-rate cell)."
+  },
+  "Figure 16(c)": {
+    "exported_name": "fig4d_rule_vs_policy.pdf",
+    "canonical_input": "data/model_test/case_results.csv",
+    "filter": "rule_decision == True for acceptance fractions: 24 cases per provider/round/event; valid model accepts in numerator, invalid responses remain in denominator. Accuracy uses all 108 cases per provider/round."
+  },
+  "Figure 17(a)": {
+    "exported_name": "fig5a_false_acceptance.pdf",
+    "canonical_input": "data/ablation3/episodes.csv",
+    "filter": "injection_occurred == True: 21, 80 and 170 episodes per arm at pollution_rate 0.05, 0.15 and 0.30."
+  },
+  "Figure 17(b)": {
+    "exported_name": "fig5b_pollution_propagation.pdf",
+    "canonical_input": "data/ablation3/episodes.csv",
+    "filter": "injection_occurred == True: 21, 80 and 170 episodes per arm at pollution_rate 0.05, 0.15 and 0.30."
+  },
+  "Figure 17(c)": {
+    "exported_name": "fig5d_tradeoff.pdf",
+    "canonical_input": "data/ablation3/episodes.csv",
+    "filter": "injection_occurred == True: 21, 80 and 170 episodes per arm at pollution_rate 0.05, 0.15 and 0.30."
+  },
+  "Figure 18": {
+    "exported_name": "fig6b_full_pressure.pdf",
+    "canonical_input": "data/ablation4/episodes.csv",
+    "filter": "pressure_mode == full_press for task-success means (600 rows per arm); evasion conditions on injection_occurred == True (80 per arm)."
+  },
+  "Table 10": {
+    "exported_name": "table10.tex",
+    "canonical_input": "data/resource_contention/episodes.csv",
+    "filter": "All 200 seeds per order/arm; mean restricted_wait_s and genuine_confirmed_by_deadline counts; do not drop censored rows."
+  }
+}

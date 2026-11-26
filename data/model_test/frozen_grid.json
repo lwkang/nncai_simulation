@@ -1,0 +1,2270 @@
+[
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "3faa54cbd4a09b4f24e50a92b74e3016165b7468a1df5939cf49bdabd6bcad8b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "02b78c586372b5b55181b764d2664992e88851d009cbe5c311c782766ad6b888"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "346cd31e30ab59434995c1d4128e4550431767dfa942a586499cea618b1598c7",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "fd29d846114b4649b6977ab45b9f5e7487e3839cdbefd5a23f9c226ec1bbc91a"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "538b0ad08cfacdd7d3abc19209b985d6a9ace62782a9a8ed155eff6bc3334826",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "e605e82de5f6fe1fb822a3b153aac11dc118d8e9358f14baceafd674a0cdf370"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "55a7f7b4a00657add10efb1c2b917ed3439006306985893dde076fdef01441be",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "27a5e12f3056ff73519322cb8b238e81f9d3986f3cae124dae94ee2938ae8f16"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "8c3a5e49e59644a06aff4052727a68dd8775412a6ae5994464581dda21099f32",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "6af18a05e1c758ed4bda52004c00db356f26f593507a718aef0ccd48c8ba0af0"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "59d3360bfe6db0867aedc4eb0ee41484b4b48ddc3bd4645a3ec1e053f83786a7",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "bcd68151f48ba78391a62176a89ee3d3c61072521a0345d1c601064e1bb981b0"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "3ec50dac767d2bec242be97ada92165d10526c1aa34e446c0927627fdc67e8ad",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "434b3cd0dd4526f6142c6dfbb06992a58c25a4352401f797b82a084dd78ea167"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "8851a237a6521602570d4957bfe407f6b51373cf0c1b5c5f40d0044065b6e25b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "c6010558938f201fc193654a1290b0982a76b0d2ab79d6b0d3a16dd68a3d125b"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "b0ca176ef8af74101c3c54247f558824f9586d5bac79039cc1f0f038882cc7d6",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "467037e0508581bb6fa85aaa7e8d06c66ec98e84994e3f39ceb45da3f0ef28ca"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "234c54afaa1197059a243d5aa5ddf714a7137b33e0642ab4d3a4e1697d62cb0d",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "ba93811f4067a6ee2f2e648195c6699731552c66c30607d9e8eb44b0b341da1a"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "530abe060b9bf0e64ed610a6b6f165e3a97446b450c87c09b1bc8eb1322abc32",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "5f7a6cc224c8285cd6b978486a079c4bf25c6ba67522f0171361f18f276fa2c1"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "f05b40c61ed58d1694152104b25f1ebc770e66a69bc74e5265140d0a62f9b6a4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "50b2f71be9e4903d89b57c613ab5b9e37142c710e34e280deff6135a40bb7add"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "83ed8255766c64bec4f3c2dd510e78340a8d06e8f23d709eaf59f6a6e690d9ec",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "b2227aeb95bb005365f1b5a6bb65ada761095ee603d196c896f089351d97c3a4"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "91c03f583571bddb29e585de50ad158af40fb1dda085f2985daa948ba427ac8d",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "02f53532228221b914f2629c11d9af2d204748df2133f6d3973982c6afac93a7"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "6c54666f52e2039016eb9d438cbf0ade7a7c6a51813b4bf73ff9faaa3ba8690c",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "dda5dfb748f440b0a54db0096198130b4bef0790066b399a93661adfeaac8f5f"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "adf88f818b276c7c1bd6b5c1cfce5c34b462c4e706a0410da451a73e0b7d321c",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "f401d92bc945612f9a1696d1ec4bd055a137bd9bad0348cf321e1c22ac8bb7ee"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "afc9dac22f409c7814fa05e30e7ca4080f2dbdd9dbc38734cec3b048c0a44c2c",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "b32289e5495c5963fb14bfa1bcaaf3399dcca8c5f83328ccfb05b71fb60b2d4a"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "fc3a154379261e555655909e03510627886cc38813761273a05ec363f85daf25",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "8df1f2aded4a007ea152050a3d3cb7f150a9dccf063bb4d960b3228866b3f9bb"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "ab8d78f1e64c460216ef45e55cb2454b12f658117fa322e8025ac202a404d87e",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "1ae511a39352b66ebf458f2a97eb16293c3c7ade1525cdbf6d59b4d6402173ab"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "7afa534b0362c25ecc58e907eaae44448eed0d3c8b5a7c82f8f1a32242c34f97",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "fe38a7d26aed004efea0106d0bd8b7b5074d1028d0cfbad07c9aef94dfaeea36"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "713487af3777944ad329b962a3548bbdc77ba57205dc2413078884416551a779",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "bb9bf42d2a0f3bd54873b593883e24c2a1209d9961b61e430f18f5c6abb447e9"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "904c8cced7971552b8f20192a53901ad758153f0ae6883c2b3b8ea8083809b5b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "d96c5995c5d5dccd3d4a8393558ff92df820cc7e8ab623fc709315ee01f34e10"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "1cafd3e54bf3f5ec698cf7dab02ca03c79b36b2962b145c8573bcee27d216dfc",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "a772d0a75e9d75391b203434a711a7698bab22e7b37490af20efacf024c718b7"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "3fb54a9be95676ec4976783aa2140683a4d76d465e6de01018e538ee72c944f5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "377ccb4c3dc6d3d984b3c37a18ccbabfe192b548cd59cfdf29a62be8e6138635"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "2b1069939faf75bca0c96b646d59149e3d2a5ef2cb91a6e34a853cc0557703fc",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "4cb77baa24231740a510b3dc2b81e9338b476a904ac365112cc89a0e31fb97bc"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "1f9b8131b2ae8d474e2a22876c73c52800be04c04eefd457b5d0359bed614ecc",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "24bcf0eec5d9f9eaf375543940e76f0a2a00b601cdc695806ec3f1684211a58e"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "d0a0435da64caef252a5ed1629d6df62e169f5f735945425403221ad0fbfe190",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "0cdc5b1aa37c67ca0021bb3e544fdc587b8ad2a0468c2eac9f9508013b28a7c9"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "8c36a6006675347fcdc61cfde7a074bd7e463f15d4933b84beda084e42b25e94",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "c7854591eff44198d9b2c670294a68188311fbe3a2d3c6222868bfac939fe520"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "fd6d5b21caa2b7fc2e223cc80bc721f3c14c9d90ad51f1edc97d3273eae731da",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "b9872787254e3113b9e7711e42ce44bdb9ff15a92e374185b2507ff23bf1d804"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "c73fdce7c6f4c35a8ad1514a54dd8934ca2339863b60552aa50e9144c9280b28",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "2f79190b68ae5799ee5168cbaee80637c09a20b6dd366316e3728eb9297a3500"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "653a3f7ffca6d8efbd6f9c3317ede47f1cb82a8599254c9387eeee639807c30c",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "715963059a25856084040835044c8c84e000529fb690e6c791f1de2a023ff932"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "ab62fa10026dbc3f1b3f01c81354765cb2e099217cf9091e6857a0f3748c67e9",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "d8cf7c62cfbb789662da217a949b719dfa4f8dcb8fbcdfe28e6fee363b8e141e"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "177cc762427c5ee03ff1a00788ef04816b95d2a067cdcbdc6701052925b1a900",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "9c83991e11073005a1c6873902a88d00f6101f73e15fd2970f80519c6dd27e95"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "afbe891484969be5106785a1f1ba988b32a9f4ca3bf040ea90f1d3e12141f4ab",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "eb5dba5bfaabc80195f76f9c8c73ab1a3e6db19945d5c31b2aea7bf45a839f52"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "fc1e44a652ed0855b87fccccc1e1f302b2a43babf11d2562a950316c3c6e22aa",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "1c97db182df99292bef8eefe49a2566cea718ae2b0f01b6e86812953a51f3010"
+  },
+  {
+    "overlap_level": 0.0,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "0448cc0d9dc6463ee73ad8c6eccd953f153ffcf9052c17eb5895dbc12c71c657",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "6c1eae628428a242feaee9147437ac2387bade9653240a4499e5724a6c38e373"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "411408f7c1dbd45e1a91f42f396ff0e715777680960f5f4b5b73edde3de304ae",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "4fc7522eed5a72c62513fa0bf398967dd7e20e092104f4de9354425d24be153e"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "f003918aa68e8b373ae93ded2296b3c9d5ca429f85030c4cfa95022d47d1dbfe",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "e3cb59322b3694248e0d2cb491e81c8d3531b8a41c6ada8b657b12f8f1d3609b"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "cd592fd5b9cbed0c0a483f706da810e24c45b29ae4b624cf15b1239ff5ba4306",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "4b8c917815e29d165c45c37feb3720be6d1945cc2ded189914506748b30f97cb"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "22e88540c9b02e9423e2d3063d08be83c83eecc68b7dda23ea7dc719ae498742",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "8bcad80cb7bf00e16daaafae89b68737c9d42aa8466fb4b974993a8560b391b9"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "153aea6ddfd8213dd506c5b34ba32541a45dc9fd1f5f7b32e6d499f4257a1552",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "7c0b93c348d2b95b6198390dec97451b46d707c1b0f5ae93a44975da0cb8257b"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "97ae4f053478950eb161462d851ab50e1a05e967819288e43da75977a6e4a254",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "4a30547e3af4dfd8714478b1de3d715c9272a22fc8dd40ff7057d94b46aa0f50"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "95c6418db0d177ca8171c8a7fc04590e76ac96e94086719e4d5be7ef136564d3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "58fd9f7549b526115b93b51975306943938b8ed54da50803b93cf21c5fc30e6c"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "eedda3e9e2651fd95280d975523c297df7ccbb46615f0cf3ed54b9f540d2bc5d",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "230d168c8a69c8af9f5691b5d35de0bc595da99b9d58eb0ade4f348f0426a573"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "d42d58d7547cf6b5de42f85b1b25ea3341f652f3058d7f196be03e2cd8320da0",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "f2a4eefd6e389ca523ac51def799a82c102f00c44b85e4e3848e2b1c7afbdcf1"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "fde6fab765f27f7c9cd3868167dd0a3770480c5ef865d7e7dd02a31657e361eb",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "249d0cb8e2b40dc7804549425df21d3a1b7991422cb5ed8537f271b4c0445621"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "b890e362ebf684652fed5ce52c80ea4c8a4ca39f8aa061cb3d58e32301fe2658",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "9b3eaa987ba6dbdd6eb18616d697d8c510f1f88861d0b6382d15038948de5331"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "d11b37b75b7288b05a7b82d3290932a089c028eda6c9ef3b942549f1b7ebcbd3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "b67be40229828ef4f446eeda48bd31ace0588460bfdb4a92c3761ee47187b701"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "02fd600b0532bb9fdb7ea96ea7c54a4549648d4a0d812331dd028917c032e74f",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "2df855ca252ff78060358c8c933e158ebd5df6c7e6477914f0d0c61cff94c250"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "034be8e5970faca919579dc89b2cd21d7acca7bb83fff8625eb4570e8b66a100",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "aee31e8abf6efaffcdab05d2ab10f784c5380b7c192647faebdec851aa6c1347"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "eafe319051a5a93db8908a30a77122b9bbf068759ce5ddaebd9b6fad43b8d404",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "3aeeeed8ab55e45cd2beff8cc82077f38b3c2b39041b885da4f80d397423e78c"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "6f9b561567b3a65d0b525524293dd6045d58bb97358bb465f8dbc337531cdcd6",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "25f5af7138d82dd97ce2e846862460229df64adc647b071c0b2f30f84b891d60"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "cfd6f3b3eec94d60dfbf43514f1eb6cc2ec9b7f3f1dcb5753b144eb320f87292",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "21812cc9a4719da066f61acce51b12439111a8195af6bdf05164cfdb83f9e3fe"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "8a632fd3e47eea7c5b38205c011b644e1edac658c95b73a3e1c59b767c8c81bd",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'confirmation'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "378a36dff36c6355605ac8e94bd69b50a9e47001cbf0575ef1ba7698a2a7fb06"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "a9059e2436cc7c627725740d6a09bb6ad0a56fb2a78763b4828f259ee791dde4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "1ae511a39352b66ebf458f2a97eb16293c3c7ade1525cdbf6d59b4d6402173ab"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "b75854470b3b1e9eea86b70f94e376402e313f509719e543498d60d4ec2c410c",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "fe38a7d26aed004efea0106d0bd8b7b5074d1028d0cfbad07c9aef94dfaeea36"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "5091d883ce35b3af4e566994e4653c48d69dd530d7ad0fd82da5bf48351a907e",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "bb9bf42d2a0f3bd54873b593883e24c2a1209d9961b61e430f18f5c6abb447e9"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "22240ebccec06933d7e2395e6c3f7698f451e3b6012102c44018c546d86e2887",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "d96c5995c5d5dccd3d4a8393558ff92df820cc7e8ab623fc709315ee01f34e10"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "1bd12b69bc8dca85037d0adea458ef4f7282309e4af61ecbc99e37a13f2e0b4a",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "a772d0a75e9d75391b203434a711a7698bab22e7b37490af20efacf024c718b7"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "5b3a96ec1c2c0fc9724e73240f88c1c8bc92b765f7711fc8cb4f30d0bea7170a",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "377ccb4c3dc6d3d984b3c37a18ccbabfe192b548cd59cfdf29a62be8e6138635"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "5f2c661d0b4bb7d29e62126c8acbd9128566972e2cf7980018573ae4a64212a1",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "4cb77baa24231740a510b3dc2b81e9338b476a904ac365112cc89a0e31fb97bc"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "f624c43d47b9fe4e6e0de91c9e3ffdde79d28e32334ec1e6bcf6539c1ec158ab",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "24bcf0eec5d9f9eaf375543940e76f0a2a00b601cdc695806ec3f1684211a58e"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "3c0c9943eb9c80e87ba7537838c66a8d703c843c1b845b794ab375cc5185923a",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "0cdc5b1aa37c67ca0021bb3e544fdc587b8ad2a0468c2eac9f9508013b28a7c9"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "05fb7db4472e17d8ea67e2566b894783f3637f3956ecb9051a9cb142b59f1592",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "c7854591eff44198d9b2c670294a68188311fbe3a2d3c6222868bfac939fe520"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "b03de3f24ccbf093ed8436dca76c1149ae96e6008fba38ed2ddf7bf0e52b6b1b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "b9872787254e3113b9e7711e42ce44bdb9ff15a92e374185b2507ff23bf1d804"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "8982e63b0d2a6f8468b5559c8043ac2df3322acb1b577cfd574ff6e119b8a93b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "2f79190b68ae5799ee5168cbaee80637c09a20b6dd366316e3728eb9297a3500"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "058172960b7fbe2e21046ae5b8c76d36c6f537068eb7da20f38b2c38e4169258",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "715963059a25856084040835044c8c84e000529fb690e6c791f1de2a023ff932"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "f42512239a03962c12e112b6bab55be05fb1ebcde2d383cdf04a99e7dd7c863f",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "d8cf7c62cfbb789662da217a949b719dfa4f8dcb8fbcdfe28e6fee363b8e141e"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "4debb368e008ae8813d5104a2d8859e97c71d47dd290e354db353a77f5f969b4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "9c83991e11073005a1c6873902a88d00f6101f73e15fd2970f80519c6dd27e95"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "a8e524941427d6d3caae7d5c9e8367abe065e4da97a443e1fb0b15bd9e7f1061",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "eb5dba5bfaabc80195f76f9c8c73ab1a3e6db19945d5c31b2aea7bf45a839f52"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "c14d32b9d522e07a53d5d8daa7c1669608f32a972c12ebfe42db8dacf323f769",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "1c97db182df99292bef8eefe49a2566cea718ae2b0f01b6e86812953a51f3010"
+  },
+  {
+    "overlap_level": 0.25,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": false,
+    "policy_correct": false,
+    "case_id": "34ebabd99bcacd48c2487ed4dab13044395ca660b84bad56b79f3d81de452e10",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "6c1eae628428a242feaee9147437ac2387bade9653240a4499e5724a6c38e373"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "70463a106f8a8df19f713d1446ab10c0482d829a85bf6137a0e25496cbfb25c3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "f2bb6ad3f30a4aaf4d81b2ad3e4b6b41adeadb1b4c089b2ecdfdeecfe47222d0"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "54df7ca30e759cce858992689015c29a7a78ad1214ef624a36cbd83fd025ddcd",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "39b8442dc962348b064ba35600c63f432dcdbf617e9a2d58ce22da8fc8284121"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "8308ee7d7c67be3d99a395320b6941d3bf82a292313b3e80c137fc14853c5d30",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "94d455d98a0bffd9f344c0750b7c52b3fc4aac78ed816c443fce919d1804e713"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "b4c93a01ca54aab211687794106036c3619df3c08c2e6084f212e129b6fc07cf",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "21c1ad5a434971a336c814ed30e1ff69f530aafc89655d027f22b4ac69cfc142"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "4cb7da3d560f9961dddc38a496a38df2dd64bd5a37baddcaff82ec36c582c692",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "d189fa50bfed9ad3519dc7791705ec02d21c94f74d478822b6cbc6e5a6f8920b"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "db5876b873efaef366d4750966b51c219c2cfa2d78276a2c4c59e0d85a60605e",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "bfaac25b42c0e5cf29140bd2216e76771611f6c8e6ddfaba1ea799fc849621bf"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "9f8bf7e3d45b1253e79716b61fb3042ec94c7ef739a5a2a54cdf4fea40191778",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "8aadfb3494ab7967b76f0dbdcf410397fb5a124e1e261ad06244a62246a02c6f"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "02a598832e3409d05907ae7b552af126c7f60f75818f480b5e97dafde38c28d2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "be81572f85a0b1c060f795712e30017abab3487dbe756d4e803a82e500afad7e"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "a271e06bd90cb41bc4de41ac1661cd3056373ac2b9c2ab6d458ae7b7f606a6a9",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "2f58e2e0df5d6a0d5b23f4afd2bbc1f1285f3c7df3e2a0709138cf81f13985e1"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "d416ba839256f6c0e00085c2d7b2154acce7cda67f5c256a1ff9648766b1594f",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "dc7a5845632242829b12c7bf23e84fe97ef0f8334aa7cf2a7b62230178416472"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "2db8dc1478ef7ff5348e02c8cb0a54e5f37a3cbc93ecd33a6629f934923345eb",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "95c788a33e4738a66cea94911a70c12c0c14491e5fb6561b64ec1f4c15d12700"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "150ed9865f6c8b1289535ee290bf6234d83842230bd731bda7a1220a470b1b9c",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "cfb1a4e3c7cb4e074e7c01af28695d78805a2f6be9e80f0dd55d88034049eb85"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "4ce0bca11b5a90f1f836463a98ea745391284ea72017e0ded8d316b413070347",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "56377eee71e802ee0ec23bc9a10996715b0c306e3b1fb89eb9b105e6eebcd79f"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "a8d1dce8dc1d1e30367a453dde588ee43af2e904d1dd1063739cf61867aa1c01",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "727487681723e93cb61dce8fb682d005c56dcec8a45d3ccc81267a092693431d"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "63f4cfc4c58110052e65388906fcb337736c2d200ad528e43864ce9a1cef41c8",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "237e84566d358ec69c1b374525018500eda232344d3ca4324afd39392dd0056e"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "d749857005fdec6001505a150f47687c3489c828bbbd8ce4b65f0903f863526d",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "c0936b0b3b5ce620189206c49af62e3f9e98c700927791f624f6df9ab6cbe28e"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "17ec2f764fb5acb1f5f19b96237376c33836424e0c9bf92f90d16fc86256ebcf",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "7418c19fa1567ef2b983cc0d09e115a32441308d73b204600b93817d49f911e0"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "A",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "f32c2697d49139b6f69da64d37b428976098ff9c94886b8fec63206737dc2b52",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_A (type: UGV).\nYour capabilities: ['ground_navigation', 'object_interaction', 'hazmat_handling', 'medical_response'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "e3a56253afccae977f0893cfc9455231a76849afc02d4b9776f98a172f9c318c"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "08f91592caba61166ef180fa6e27daf6f2bf9512755932c42dfc4ef165996103",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "fd95538e52b3037f474cac9a5aefc554856f24d801a334b344e40e9d2ec30c7f"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "f2aa625bd9b81bcca4876b37fb4aa1d4df3be1e3ca00116c3a922a89a7a20da7",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "233747d315d1efbd7c13fc97b1f95e5e035a6c1c4186829cd7a6db723e5e362d"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "addf955a6435af927b7cf59acdf73bcf5064ac8491361308551792e8125de483",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "9c98e1dd0ff493d5c5d8299f85ad5283eaf51e6e666975d15755295f8b43359b"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "000873c635b47c1d586363aebc947bea1b24f7dba5b8003d48803b1f5c730fbf",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "dc0351fef584620dbd2949e966c8983bf2b9a54dcf08958b6f48ce71b425beb2"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "f1c267754d5a7240960214097af76550318d946a0774c17d49a24faa07cff728",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "f239a5825bfafa8b9b4248e066a8f085ac6f8aa2025051dcdc982cbdb2156d0b"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 20,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "7baa1dca317d46563fb9a8c54ef96a4f7f4107ed348c143f38cca8e0b22c1de8",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.20  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "bdeae2acbcb4fc47c3bebae4b953e830a7dac87496e8ad79a180e80b0b6a7fc8"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "e7f3db797f0097bd8821492448b08f25f82d5ff465bad6134e50b50bdbaa1007",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "71160064ceede21dc6b212a54d606dd9dc72f41d94b001bbf12be4dbcb57d157"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "25220e5daf99000af89ed4a6936e3ca74bb100700e472ad93e007f26b8819b9c",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "3cea8f70c81bc5f591886af531e0ed758d0519f46562e793753e8a637c813fd6"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "e5849f2501b1785434ae555315b070779998cfb07a617a286d65d6ac21f215a7",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "7dd2af40e6c5ae0e9762451d40b0c9133a8cd2f663946d7f711e67ed596e8ef6"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "8a393b4d800b20932076fdea37ab303067e676435ecb521e826c0f3403a71149",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "a4803b58bebd7a7df22c1feecc09bb4e70c9237fb998da7862e4532c233fe9c8"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "701ef869218f61d28e295c548f8d89ed81600ca561383b382a4ba9f4a0f1c111",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.60  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "fc3a0f0cc6265e261ba01eaeadb1f2d3a47a7b6cd3ffdd4d526b07772cf01842"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 60,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "ae999efadd922483ffeda3298f40c0b2a2c3fd7261c0ea6bfa55005286ae3ce8",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.60  ->  VIOLATED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "9aa8ed18563340ccd577c006ae8f60e1227d8430cbd28dafba3229f21118fa3b"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "f4f6bd848160d316d500d6dd02d7b73cb7ffcf7f04fc62e5f5809433f68bfd75",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "0f428fa26993e9748a6ab6cc7e46e1d1326d43b959ef16e3249f8a6e819a5067"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": false,
+    "case_id": "f1377d0430f8771c01e63565529067853e0bcdb68dedd8afa78a3a6e113322ec",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 200 kbps  ->  VIOLATED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "639c312d1284dced18aab00babea126b9c2b39c8e6dc1b234533f0f5bc84d890"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 200,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "91e73cbe7b6f86073dcc487ce9d860fd51ad752bef6dbb147a9e7c8622ba5a2f",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 200 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "639ff6e38513d2678165a9d2a29110e8f324b657ae2964afa4055e458ad90472"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "fire",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "1c11c3580e35bd6dbed69c27e6b14e929d2a3b6ae33d2d4c2408d06433964979",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: fire (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.60, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 200 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "c32a33b32322475f0fbb858fe9b33c78257d85c6a7a41e3549b2bfe696c7fad6"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "casualty",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "997941beffe3040336b246eb0c588de1851202c709b096ed41e7d92ee14b5f6a",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: casualty (requires capability: ['medical_response', 'confirmation']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.30, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 300 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "3936c2e6c28e1680b8fbcc8857bbc5b892233f25ea1bae4ab4a465dacc97e6c5"
+  },
+  {
+    "overlap_level": 0.5,
+    "ugv_label": "B",
+    "event_type": "hazmat",
+    "battery_pct": 95,
+    "bandwidth_kbps": 1000,
+    "rule_decision": true,
+    "policy_correct": true,
+    "case_id": "5a0114345e8cf5df9fd7a7e5452fb507fc3e8d959f190c332c4a0b495b9e1566",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an embodied agent in an urban emergency search team. Evaluate incoming task requests and respond ONLY with a JSON object. No markdown, no explanation outside the JSON."
+      },
+      {
+        "role": "user",
+        "content": "You are agent UGV_B (type: UGV).\nYour capabilities: ['ground_navigation', 'confirmation', 'medical_response', 'hazmat_handling'].\n\nIncoming task: hazmat (requires capability: ['hazmat_handling', 'local_response']).\n\nEach resource constraint has already been evaluated for you. Here are the results:\n  - Battery requirement: needs >= 0.70, agent has 0.95  ->  SATISFIED\n  - Bandwidth requirement: needs >= 150 kbps, agent has 1000 kbps  ->  SATISFIED\n\nDecision rule: ACCEPT the task only if your capabilities cover the required capability AND every constraint above shows SATISFIED. If any constraint shows VIOLATED, REJECT.\n\nRespond ONLY with this JSON (no other text):\n{\"accept\": true/false, \"reason\": \"one short sentence\", \"action_sequence\": [\"action1\", \"action2\"]}"
+      }
+    ],
+    "prompt_sha256": "44c08f7db525a917bd746a90536f5a300ead4059468ad380c43cf1196d6f5960"
+  }
+]
